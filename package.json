@@ -16,5 +16,8 @@
     "url": "https://github.com/CuzICan2/blackjack/issues"
   },
   "homepage": "https://github.com/CuzICan2/blackjack#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "knockout": "^3.5.0"
+  }
 }
