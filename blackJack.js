@@ -176,19 +176,26 @@ function endGame() {
   newGameButton.style.display = 'inline';
   hitButton.style.display = 'none';
   stayButton.style.display = 'none';
-  if (dealerScore > 21) { 
+  if (dealerScore > 21) {
+    console.log("Dealer fat");
     textArea.innerText += '\n \n You won the game!!!';
   }      
-  else if (playerScore > 21) { 
-    textArea.innerText += '\n \n You lost the game!!!';
+  else if (playerScore > 21) {  
+    console.log("Player fat");
+    textArea.innerText += '\n \n You lost the game!!!'; //This line will not print???
+    console.log("after concat...")
+    textArea.innerText += "Hej hopp";
   }      
   else if (dealerScore > playerScore) {
+    console.log("Player low");
     textArea.innerText += '\n \n You lost the game!!!';
   }
   else if (playerScore > dealerScore) {
+    console.log("Player high");
     textArea.innerText += '\n \n You won the game!!!';
   }
   else if (playerScore === dealerScore) {
+    console.log("Tie");
     textArea.innerText += '\n \n It\'s a tie!!!';
   }
   return;
